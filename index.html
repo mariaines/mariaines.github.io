@@ -1,9 +1,29 @@
 ---
 layout: page
 title: Hi, I'm Maria-Ines
-subtitle: Software engineer at Seesaw, ex-Googler, cat lady
+subtitle: Software engineer, ex-Googler, cat lady
 use-site-title: true
+bigimg: /img/big/pyramid.jpg
 ---
+This site is under construction :)
+
+<p>Find me elsewhere:</p>
+<div class="list-group-flush">
+  {%- for link in site.social-network-links -%}
+    {%- assign curkey = link[0] -%}
+    {%- assign element = site.data.SocialNetworks[curkey] -%}
+    {%- if curkey == 'rss' or curkey == 'email' -%}
+    {%- else -%}
+      <a class="list-group-item list-group-item-action" href="{{element.baseURL}}{{ site.social-network-links[curkey] }}" title="{{ element.name }}">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa {{ element.icon }} fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="">{{ element.name }}</span>
+      </a>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
