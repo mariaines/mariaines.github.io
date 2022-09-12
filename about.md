@@ -4,7 +4,7 @@ title: About me
 subtitle: tl;dr
 ---
 
-I'm a full-stack software engineer living in the great city of Oakland, CA. I code primarily in python and javascript.
+I'm a full-stack software engineer living in the great city of Oakland, CA.
 
 I'm currently at [Seesaw](https://web.seesaw.me), a platform for student engagement. We make apps for students, teachers, and families to engage in K-12 student learning.
 
